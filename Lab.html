@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Table.html</title>
+
+        <style>
+
+            #Conclusion {
+                color: red;
+            }
+
+            .Type1 {
+                font-size: 12pt;
+                font-weight: bolder;
+                font-style: italic;
+                color: rgb(255, 191, 0);
+            }
+
+            .Type2 {
+                font-size: 24pt;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: blue;
+            }
+
+            span {
+                color: blueviolet;
+            }
+
+            .extra span {
+                color: inherit;
+            }
+
+            p span {color: rgb(107, 149, 233);}
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <h3 class="extra" style="color:rgb(50, 50, 142) ;">Introduction</h3>
+        <p><span>These are my favorite Gundam</span></p>
+        <table border="1"> <!--此處的"1"指表格框線的寬度為"1"像素-->
+
+            <tr class="Type1"> <!--標示表格的列數-->
+                <th>Type</th> <!--表格每列有四行，且第一列為標題列-->
+                <th>Series</th> 
+                <th>Photos</th>
+                <th>Introduction</th>
+            </tr>
+
+            <tr align="center">
+                <td rowspan="2">Real World</td>
+                <td>Gundam Seed Destiny</td>
+                <td><img src="https://img.toy-people.com/member/161583986930.jpg" width="200"></td>
+                <td><span>Destiny Gundam</span></td>
+            </tr>
+                
+            
+            <tr align="center">
+                <td>Gundam OO: Awakening of The TrailBlazer</td>
+                <td><img src="https://img.toy-people.com/member/162728062244.jpg" width="200"></td>
+                <td class="extra" style="color:cornflowerblue">Gundam  Zabanya</td>
+            </tr>
+            
+            <tr align="center">
+                <td>Menga World</td>
+                <td>Gundam Re Rise</td>
+                <td><img src="https://cf.shopee.tw/file/45a5e9a989f67f94213ca37f224201e3" width="200"></td>
+                <td class="extra" style="color:rgb(100, 237, 187)">Core Gundam</td>
+            </tr>
+            <tr align="center" id="Conclusion">
+                <td colspan="4" ><b>Created after 2000s</b></td>
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
